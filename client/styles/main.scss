@@ -1,3 +1,239 @@
 @import 'bourbon';
 
 @import 'mixins/base';
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$yellow: #ffbc00;
+$white: #fff;
+$black: #292929;
+
+body {
+		background: $yellow;
+		font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		color: $black;
+}
+
+.global {
+	width: 100%;
+	display: block;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 72px;
+	letter-spacing: -6px;
+}
+
+h2 {
+	opacity: 0.7;
+	font-weight: 400;
+	font-size: 26px;
+	letter-spacing: -1.8px;
+}
+
+.left, .right{
+	width: 50%;
+}
+
+.down {
+	display: block;
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	margin: -32px 0 0 -32px;
+}
+
+.download {
+	width: 100%;
+	
+	.download--button{
+		width: 250px;
+		height: 88px;
+		background: #fff;
+		border-radius: 5px;
+		display: inline-block;
+		margin: 20px 3px 0;
+	}
+}
+
+.down, .download--button, .grupo, .social--link {
+	background: $white;
+	
+	img { @include transition(opacity 0.15s ease-in-out); }
+	&:hover img { opacity: 0.9; }
+}
+
+.content {
+	max-width: 1100px;
+	margin: 0 auto;
+	
+	.left, .right {
+		float: left;
+		width: 50%;
+		height: 100%;
+	}
+	
+	.right {
+		float: right;
+	}
+}
+
+.intro {
+	height: 900px;
+	position: relative;
+	
+	.intro--logo {
+		margin: 110px 0 0 0;
+	}
+	
+	h1 {
+		font-size: 82px;
+		margin: 20px auto 0;
+	}
+	
+	h2 {
+		font-size: 32px;
+		width: 600px;
+		margin: -15px auto 20px;
+		line-height: 40px;
+	}
+	
+	.brands {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -626px;
+		
+		img {
+			display: block;
+		}
+	}
+	
+}
+
+.info-1, .info-2 {
+	height: 715px;
+	text-align: left;
+	
+	h2 {
+		line-height: 30px;
+		width: 480px;
+		margin: -15px 0 20px;
+	}
+	
+	.content {
+		height: 100%;
+	}
+}
+
+.info-1 {
+	background: $white;
+	
+	.left {
+		padding: 180px 0;
+	}
+}
+
+.info-2 {
+	
+	.right {
+		padding: 180px 0;
+	}
+	
+}
+
+.footer {
+	height: 510px;
+	background: $white;
+	padding-top: 107px;
+	
+	.footer--download {
+		margin-top: 20px;
+	}
+	
+	h1 {
+		font-size: 34px;
+		letter-spacing: -1.8px;
+		width: 520px;	
+		line-height: 40px;
+		margin: 0 auto;
+	}
+
+	.links {
+		max-width: 1100px;
+		margin: 50px auto 0;
+		
+		.top {
+			a {
+				margin: 0 10px;
+			}
+		}
+		
+		.bottom {
+			opacity: 0.4;
+			margin-top: 10px;
+		}
+		
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			opacity: 0.4;
+		}
+		li a {
+			text-decoration: none;
+			color: $black;
+			&:hover { opacity: 0.8; }
+		}
+	}
+	
+	.external, .social, .grupo {
+		width: 33.33%;
+		display: inline-block;
+	}
+	
+	.external {
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//@mixin guth($height, $color) {
+//	height: $height;
+//	background: $white;
+//}
+
+
+
+//.will {
+//		float: left;
+//		width: $huge;
+//		height: $huge;
+//		background: darken(blue, 30%);
+//		color: $white;
+//		
+//		&:hover {
+//				background: darken(blue, 50%);
+//		}
+//		
+//		.boo {
+//				float: right;
+//				width: $small;
+//				height: $small;
+//				background: $white;
+//		}
+//}
